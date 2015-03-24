@@ -204,6 +204,7 @@ class PunyPNG
         curl_setopt($this->ch, CURLOPT_FILE, $file);
 
         curl_exec($this->ch);
+        fclose($file);
     }
 
     /**
